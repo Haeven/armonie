@@ -50,7 +50,7 @@ export function GridTileImage({
       ) : null}
     </div>
       {labels ? (
-        <div className="absolute flex left-0 top-0 w-3/4 text-black dark:text-white">
+        <div className="flex left-0 top-0 w-3/4 text-black dark:text-white">
           <h3
             data-testid="product-name"
             className={clsx(
