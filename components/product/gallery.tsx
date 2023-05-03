@@ -28,7 +28,7 @@ export function Gallery({
   }
 
   const buttonClassName =
-    'px-9 cursor-pointer ease-in-and-out duration-200 transition-bg bg-[#7928ca] hover:bg-violetDark';
+    'px-9 cursor-pointer ease-in-and-out duration-200 transition-bg bg-[#be3455] hover:bg-violetDark';
 
   return (
     <div className="h-full">

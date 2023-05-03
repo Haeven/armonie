@@ -1,24 +1,24 @@
 import clsx from 'clsx';
 
-function Grid(props: React.ComponentProps<'ul'>) {
+function Grid(props: React.ComponentProps<'div'>) {
   return (
-    <ul {...props} className={clsx('grid grid-flow-row  gap-4 py-5', props.className)}>
+    <div className='flex'>
       {props.children}
-    </ul>
+    </div>
   );
 }
 
-function GridItem(props: React.ComponentProps<'li'>) {
+function GridItem(props: React.ComponentProps<'div'>) {
   return (
-    <li
+    <div
       {...props}
       className={clsx(
-        'relative aspect-square h-full w-full overflow-hidden transition-opacity',
+        'relative flex-1 aspect-square h-full w-full overflow-hidden transition-opacity',
         props.className
       )}
     >
       {props.children}
-    </li>
+    </div>
   );
 }
 
