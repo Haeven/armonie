@@ -23,7 +23,7 @@ export function GridTileImage({
   return (
     <>
     <div
-      className={clsx('pb-10 relative flex-col items-baseline flex h-full w-full items-center justify-center overflow-hidden', {
+      className={clsx('pb-10 relative flex-col items-baseline flex items-center justify-center overflow-hidden', {
         'bg-white dark:bg-white': background === 'white',
         'bg-[#ff0080] dark:bg-[#ff0080]': background === 'pink',
         'bg-[#be3455] dark:bg-[#be3455]': background === 'purple',
@@ -37,11 +37,11 @@ export function GridTileImage({
       })}
     >
       {active !== undefined && active ? (
-        <span className="absolute h-full w-full bg-white opacity-25"></span>
+        <span className="absolute bg-white opacity-25"></span>
       ) : null}
       {props.src ? (
         <Image
-          className={clsx('relative h-full w-full object-contain', {
+          className={clsx('relative object-contain', {
             'transition duration-300 ease-in-out hover:scale-105': isInteractive
           })}
           {...props}
